@@ -1,0 +1,21 @@
+ab = {
+    'Swaroop': 'swaroop@gmail.com',
+    'mark': 'mark@facebook.com',
+    'larry': 'larry@gmail.com',
+    'spammer': 'spammer@gmail.com'
+}
+
+print("Swaroop's address is", ab['Swaroop'])
+
+del ab["spammer"]
+
+print("\nThere are {} addresses in the address book".format(len(ab)))
+
+for name, address in ab.items():
+    print("Contact {} at {}".format(name, address))
+
+ab["Guido"] = "guido@python.org"
+
+if 'Guido' in ab:
+    print("\nGuido's address is {}".format(ab["Guido"]))
+
